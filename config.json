@@ -9,6 +9,30 @@
         "format": "scss/variables"
       }]
     },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [
+      {
+        "destination": "colors.js",
+        "format": "javascript/es6",
+        "filter": {
+          "attributes": {
+            "category": "color"
+          }
+        }
+      },
+      {
+        "destination": "sizes.js",
+        "format": "javascript/es6",
+        "filter": {
+          "attributes": {
+            "category": "size"
+          }
+        }
+      }
+      ]
+    },
     "android": {
       "transformGroup": "android",
       "buildPath": "build/android/",

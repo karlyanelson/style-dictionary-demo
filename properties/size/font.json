@@ -1,21 +1,17 @@
 {
   "size": {
     "font": {
-      "small" : {
-        "value": "0.75",
-        "comment": "the small size of the font"
+      "title" : {
+        "value": "75",
+        "comment": "used for titles"
       },
-      "medium": {
-        "value": "1",
-        "comment": "the medium size of the font"
+      "body": {
+        "value": "50",
+        "comment": "used for regular text"
       },
-      "large" : {
-        "value": "2",
-        "comment": "the large size of the font"
-      },
-      "base"  : {
-        "value": "{size.font.medium.value}",
-        "comment": "the base size of the font"
+      "metadata" : {
+        "value": "25",
+        "comment": "used for supplementary information"
       }
     }
   }

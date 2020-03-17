@@ -3,23 +3,18 @@
 // StyleDictionary.swift
 //
 // Do not edit directly
-// Generated on Mon, 16 Mar 2020 23:18:41 GMT
+// Generated on Mon, 16 Mar 2020 23:36:55 GMT
 //
 
 
 import UIKit
 
 public class StyleDictionary {
-    public static let colorBaseGrayDark = UIColor(red: 0.067, green: 0.067, blue: 0.067, alpha:1)
-    public static let colorBaseGrayLight = UIColor(red: 0.800, green: 0.800, blue: 0.800, alpha:1)
-    public static let colorBaseGrayMedium = UIColor(red: 0.600, green: 0.600, blue: 0.600, alpha:1)
-    public static let colorBaseGreen = UIColor(red: 0.000, green: 1.000, blue: 0.000, alpha:1)
-    public static let colorBaseRed = UIColor(red: 1.000, green: 0.000, blue: 0.000, alpha:1)
-    public static let colorFontBase = UIColor(red: 1.000, green: 0.000, blue: 0.000, alpha:1)
-    public static let colorFontSecondary = UIColor(red: 0.000, green: 1.000, blue: 0.000, alpha:1)
-    public static let colorFontTertiary = UIColor(red: 0.800, green: 0.800, blue: 0.800, alpha:1)
-    public static let sizeFontBase = CGFloat(16.00)
-    public static let sizeFontLarge = CGFloat(32.00)
-    public static let sizeFontMedium = CGFloat(16.00)
-    public static let sizeFontSmall = CGFloat(12.00)
+    public static let colorAction = UIColor(red: 0.184, green: 0.502, blue: 0.929, alpha:1)
+    public static let colorInk = UIColor(red: 0.102, green: 0.102, blue: 0.102, alpha:1)
+    public static let colorNegative = UIColor(red: 0.922, green: 0.341, blue: 0.341, alpha:1)
+    public static let colorPositive = UIColor(red: 0.153, green: 0.682, blue: 0.376, alpha:1)
+    public static let sizeFontBody = CGFloat(800.00)
+    public static let sizeFontMetadata = CGFloat(400.00)
+    public static let sizeFontTitle = CGFloat(1200.00)
 }
