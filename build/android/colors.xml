@@ -2,10 +2,11 @@
 
 <!--
   Do not edit directly
-  Generated on Mon, 16 Mar 2020 23:36:55 GMT
+  Generated on Fri, 29 May 2020 22:59:09 GMT
 -->
 <resources>
   <color name="color_ink">#ff1a1a1a</color>
+  <color name="color_bg">#ffffffff</color>
   <color name="color_action">#ff2f80ed</color>
   <color name="color_positive">#ff27ae60</color>
   <color name="color_negative">#ffeb5757</color>

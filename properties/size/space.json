@@ -1,0 +1,14 @@
+{
+    "size": {
+        "base" : {
+            "value": "1"
+        },
+        "medium": {
+            "value": "2"
+        },
+        "large" : {
+            "value": "4"
+        }
+    }
+  }
+  

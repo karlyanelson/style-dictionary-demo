@@ -1,0 +1,33 @@
+@use 'build/scss/variables';
+
+html {
+    font-size: 24px;
+}
+
+body {
+    background-color: $color-bg;
+    color: $color-ink;
+    font-size: $size-font-body;
+    text-align: center;
+}
+
+main {
+    max-width: $size-large * 10;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: $size-font-title;
+}
+
+a {
+    color: $color-action;
+}
+
+button {
+    background-color: $color-action;
+    border: 1px solid $color-action;
+    color: $color-bg;
+    font-size: $size-font-body;
+    padding: $size-base;
+}

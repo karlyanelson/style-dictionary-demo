@@ -1,0 +1,25 @@
+{
+  "name": "style-dictionary-demo",
+  "version": "1.0.0",
+  "description": "This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run: ```bash style-dictionary build ```",
+  "main": "build.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.7",
+    "style-dictionary": "^2.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build/ && node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlyanelson/style-dictionary-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlyanelson/style-dictionary-demo/issues"
+  },
+  "homepage": "https://github.com/karlyanelson/style-dictionary-demo#readme"
+}

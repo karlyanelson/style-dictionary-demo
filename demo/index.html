@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Style Dictionary Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="cheese">
+            <h1>Hello World</h1>
+            <p><a href="#">I'm a link</a></p>
+            <button>And I'm a button</button>
+            <p id="bacon"></p>
+        </main>
+
+        <script>
+            fetch('https://baconipsum.com/api/?type=meat-and-filler').then(function(response){
+                if(response.ok){
+                    return response.json();
+                } else {
+                    return Promise.reject(response);
+                }
+            }).then(function(response){
+                document.querySelector('#bacon').textContent = response.join('');
+            }).catch(function(err) {
+                console.warn('Oopsie daises:', err);
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+html {
+  font-size: 24px;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-size: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  color: #2f80ed;
+}
+
+button {
+  background-color: #2f80ed;
+  border: 1px solid #2f80ed;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 1rem;
+}

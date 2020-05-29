@@ -2,11 +2,11 @@
 
 <!--
   Do not edit directly
-  Generated on Mon, 16 Mar 2020 23:36:55 GMT
+  Generated on Fri, 29 May 2020 22:59:09 GMT
 -->
 <resources>
-  <dimen name="size_font_title">1200.00sp</dimen><!-- used for titles -->
-  <dimen name="size_font_body">800.00sp</dimen><!-- used for regular text -->
-  <dimen name="size_font_metadata">400.00sp</dimen><!-- used for supplementary information -->
+  <dimen name="size_font_title">48.00sp</dimen><!-- used for titles -->
+  <dimen name="size_font_body">16.00sp</dimen><!-- used for regular text -->
+  <dimen name="size_font_metadata">12.00sp</dimen><!-- used for supplementary information -->
   
 </resources>

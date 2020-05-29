@@ -2,15 +2,15 @@
   "size": {
     "font": {
       "title" : {
-        "value": "75",
+        "value": "3",
         "comment": "used for titles"
       },
       "body": {
-        "value": "50",
+        "value": "1",
         "comment": "used for regular text"
       },
       "metadata" : {
-        "value": "25",
+        "value": ".75",
         "comment": "used for supplementary information"
       }
     }

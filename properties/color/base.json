@@ -1,6 +1,7 @@
 {
   "color": {
     "ink": { "value": "#1A1A1A" },
+    "bg": { "value": "#FFFFFF" },
     "action": { "value": "#2F80ED" },
     "positive": { "value": "#27AE60" },
     "negative": { "value": "#EB5757" }

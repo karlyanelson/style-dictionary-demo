@@ -1,3 +1,16 @@
+# How to build
+
+```
+npm run build
+```
+
+Will build style dictionary and compile sass files into css for demo site.
+
+Just open the `demo/index.html` file in the browser to view.
+
+
+--- 
+
 # Basic Style Dictionary
 
 This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run:
