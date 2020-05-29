@@ -2,12 +2,18 @@
   "source": ["properties/**/*.json"],
   "platforms": {
     "scss": {
-      "transformGroup": "scss",
+      "transformGroup": "css",
       "buildPath": "build/scss/",
-      "files": [{
-        "destination": "_variables.scss",
+      "files": [
+        {
+        "destination": "_sass-variables.scss",
         "format": "scss/variables"
-      }]
+        },
+        {
+          "destination": "_css-variables.scss",
+          "format": "css/variables"
+        }
+      ]
     },
     "js": {
       "transformGroup": "js",

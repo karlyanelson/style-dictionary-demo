@@ -1,4 +1,4 @@
-@use 'build/scss/variables';
+@use 'build/scss/sass-variables';
 
 html {
     font-size: 24px;
@@ -32,5 +32,13 @@ button {
     padding: $size-base;
 }
 
-// Potential way to automate theming:
+// Potential way to automate theming with @use:
 // https://sass-lang.com/documentation/at-rules/use#configuration
+
+// Or maybe map sass variables:
+// https://codepen.io/karlyanelson/pen/NWGWOXa
+
+// You can't interpolate sass variables :(
+
+// So maybe use css variables instead:
+// https://codepen.io/karlyanelson/pen/NWGWOXa
