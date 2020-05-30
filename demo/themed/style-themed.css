@@ -1,0 +1,112 @@
+/**
+ * Do not edit directly
+ * Generated on Sat, 30 May 2020 02:01:41 GMT
+ */
+:root {
+  --color-ink: #1a1a1a;
+  --color-bg: #ffffff;
+  --color-action: #2f80ed;
+  --color-positive: #27ae60;
+  --color-negative: #eb5757;
+  --color-theme-light-ink: #1a1a1a;
+  --color-theme-light-bg: #ffffff;
+  --color-theme-light-action: #2f80ed;
+  --color-theme-light-positive: #27ae60;
+  --color-theme-light-negative: #eb5757;
+  --color-theme-dark-ink: #ffffff;
+  --color-theme-dark-bg: #1a1a1a;
+  --color-theme-dark-action: #2f80ed;
+  --color-theme-dark-positive: #27ae60;
+  --color-theme-dark-negative: #eb5757;
+  --color-theme-medium-ink: #444343;
+  --color-theme-medium-bg: #f3f3f3;
+  --color-theme-medium-action: #6497db;
+  --color-theme-medium-positive: #54bd81;
+  --color-theme-medium-negative: #e47272;
+  --color-theme-amurica-ink: #ffffff;
+  --color-theme-amurica-bg: #be0a2f;
+  --color-theme-amurica-action: #002667;
+  --color-theme-amurica-positive: #469c96;
+  --color-theme-amurica-negative: #e0ce46;
+  --size-font-title: 3rem;
+  /* used for titles */
+  --size-font-body: 1rem;
+  /* used for regular text */
+  --size-font-metadata: 0.75rem;
+  /* used for supplementary information */
+  --size-base: 1rem;
+  --size-medium: 2rem;
+  --size-large: 4rem;
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-size: var(--size-font-body);
+  text-align: center;
+}
+
+body.light {
+  --color-ink: var(--color-theme-light-ink);
+  --color-bg: var(--color-theme-light-bg);
+  --color-action: var(--color-theme-light-action);
+  --color-positive: var(--color-theme-light-positive);
+  --color-negative: var(--color-theme-light-negative);
+}
+
+body.dark {
+  --color-ink: var(--color-theme-dark-ink);
+  --color-bg: var(--color-theme-dark-bg);
+  --color-action: var(--color-theme-dark-action);
+  --color-positive: var(--color-theme-dark-positive);
+  --color-negative: var(--color-theme-dark-negative);
+}
+
+body.medium {
+  --color-ink: var(--color-theme-medium-ink);
+  --color-bg: var(--color-theme-medium-bg);
+  --color-action: var(--color-theme-medium-action);
+  --color-positive: var(--color-theme-medium-positive);
+  --color-negative: var(--color-theme-medium-negative);
+}
+
+body.amurica {
+  --color-ink: var(--color-theme-amurica-ink);
+  --color-bg: var(--color-theme-amurica-bg);
+  --color-action: var(--color-theme-amurica-action);
+  --color-positive: var(--color-theme-amurica-positive);
+  --color-negative: var(--color-theme-amurica-negative);
+}
+
+main {
+  max-width: calc(var(--size-large) * 10);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--size-font-title);
+}
+
+a {
+  color: var(--color-action);
+}
+
+button {
+  background-color: var(--color-action);
+  border: 1px solid var(--color-action);
+  color: var(--color-bg);
+  font-size: var(--size-font-body);
+  padding: var(--size-base);
+}
+
+.error {
+  color: var(--color-negative);
+}
+
+.success {
+  color: var(--color-positive);
+}

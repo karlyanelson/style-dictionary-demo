@@ -15,7 +15,31 @@ sass.render({
       fs.writeFile('demo/style.css', result.css, function(err){
         if(!err){
           //file written on disk
+          console.log('compiled sass');
+        } else {
+            console.log(err);
         }
       });
+    } else {
+        console.log(error);
+    }
+});
+
+sass.render({
+    file: 'demo/themed/style-themed.scss',
+    outFile: 'demo/themed/style-themed.css',
+  }, function(error, result) { // node-style callback from v3.0.0 onwards
+    if(!error){
+      // No errors during the compilation, write this result on the disk
+      fs.writeFile('demo/themed/style-themed.css', result.css, function(err){
+        if(!err){
+          //file written on disk
+          console.log('compiled themed sass');
+        } else {
+            console.log(err);
+        }
+      });
+    } else {
+        console.log(error);
     }
 });

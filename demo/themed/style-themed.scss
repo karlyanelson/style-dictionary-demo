@@ -1,0 +1,76 @@
+@use 'build/scss/css-variables';
+
+@mixin mode($theme) {
+    --color-ink: var(--color-theme-#{$theme}-ink);
+    --color-bg: var(--color-theme-#{$theme}-bg);
+    --color-action: var(--color-theme-#{$theme}-action);
+    --color-positive: var(--color-theme-#{$theme}-positive);
+    --color-negative: var(--color-theme-#{$theme}-negative);
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-size: var(--size-font-body);
+    text-align: center;
+}
+
+body.light {
+    @include mode(light);
+}
+
+body.dark {
+    @include mode(dark);
+}
+
+body.medium {
+    @include mode(medium);
+}
+
+body.amurica {
+    @include mode(amurica);
+}
+
+main {
+    max-width: calc(var(--size-large) * 10);
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: var(--size-font-title);
+}
+
+a {
+    color: var(--color-action);
+}
+
+button {
+    background-color: var(--color-action);
+    border: 1px solid var(--color-action);
+    color: var(--color-bg);
+    font-size: var(--size-font-body);
+    padding: var(--size-base);
+}
+
+.error {
+    color: var(--color-negative);
+}
+
+.success {
+    color: var(--color-positive);
+}
+
+// Potential way to automate theming with @use:
+// https://sass-lang.com/documentation/at-rules/use#configuration
+
+// Or maybe map sass variables:
+// https://codepen.io/karlyanelson/pen/NWGWOXa
+
+// You can't interpolate sass variables :(
+
+// So maybe use css variables instead:
+// https://codepen.io/karlyanelson/pen/NWGWOXa

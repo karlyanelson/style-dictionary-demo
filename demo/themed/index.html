@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Style Dictionary Demo</title>
+        <link rel="stylesheet" href="style-themed.css">
+    </head>
+    <body class="light">
+        <nav><a href="/">Basic Demo</a></nav>
+        <fieldset class="modes">
+            <input class="light-mode" type="radio" id="light" name="mode" value="light" checked>
+            <label for="light">Light Mode</label>
+
+            <input class="medium-mode" type="radio" id="medium" name="mode" value="medium">
+            <label for="medium">Medium Mode</label>
+            
+            <input class="dark-mode" type="radio" id="dark" name="mode" value="dark">
+            <label for="dark">Dark Mode</label>
+
+            <input class="amurica-mode" type="radio" id="amurica" name="mode" value="amurica">
+            <label for="amurica">Amurica Mode</label>
+        </fieldset>
+          
+        <main>
+            <h1>Hello World</h1>
+            <p><a href="#">I'm a link</a></p>
+            <button>And I'm a button</button>
+            <p class="success">Success!</p>
+            <p class="error">Error!</p>
+            <p id="bacon"></p>
+        </main>
+
+        <script>
+            fetch('https://baconipsum.com/api/?type=meat-and-filler').then(function(response){
+                if(response.ok){
+                    return response.json();
+                } else {
+                    return Promise.reject(response);
+                }
+            }).then(function(response){
+                document.querySelector('#bacon').textContent = response.join('');
+            }).catch(function(err) {
+                console.warn('Oopsie daises:', err);
+            })
+
+            const body = document.querySelector('body');
+            const modesInputs = document.querySelector('.modes');
+
+
+
+            modesInputs.addEventListener('change', function(event){
+                if (event.target.checked){
+                    const mode = event.target.value;
+                    console.log(mode);
+
+                    body.className = mode;
+                }
+            });
+
+        </script>
+    </body>
+</html>
