@@ -44,14 +44,14 @@
 
             const body = document.querySelector('body');
             const modesInputs = document.querySelector('.modes');
+            const currentlySelected = document.querySelector('.modes input:checked');
 
-
+            body.className = currentlySelected.value;
 
             modesInputs.addEventListener('change', function(event){
                 if (event.target.checked){
                     const mode = event.target.value;
                     console.log(mode);
-
                     body.className = mode;
                 }
             });

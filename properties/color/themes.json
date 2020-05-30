@@ -17,7 +17,7 @@
       },
       "medium": {
         "ink": { "value": "#444343" },
-        "bg": { "value": "#F3F3F3" },
+        "bg": { "value": "#CAC7C7" },
         "action": { "value": "#6497DB" },
         "positive": { "value": "#54BD81" },
         "negative": { "value": "#E47272" }
