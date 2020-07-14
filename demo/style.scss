@@ -1,4 +1,5 @@
 @import 'build/scss/sass-variables';
+@import 'build/scss/icons';
 
 html {
     font-size: 24px;
@@ -39,6 +40,40 @@ button {
 .success {
     color: $color-positive;
 }
+
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: .25rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-add {
+    background-image: url('data:image/svg+xml;base64,#{$asset-icon-add}');
+}
+
+.icon-check {
+    background-image: url('data:image/svg+xml;base64,#{$asset-icon-check}');
+}
+
+.icon-close {
+    background-image: url('data:image/svg+xml;base64,#{$asset-icon-close}');
+}
+
+.icon-favorite {
+    background-image: url('data:image/svg+xml;base64,#{$asset-icon-favorite}');
+}
+
+.icon-search {
+    background-image: url('data:image/svg+xml;base64,#{$asset-icon-search}');
+}
+
+.icon-warning {
+    background-image: url('data:image/svg+xml;base64,#{$asset-icon-warning}');
+}
+
 
 
 // Potential way to automate theming with @use:

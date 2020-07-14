@@ -6,8 +6,8 @@
       "buildPath": "build/scss/",
       "files": [
         {
-        "destination": "_sass-variables.scss",
-        "format": "scss/variables"
+          "destination": "_sass-variables.scss",
+          "format": "scss/variables"
         },
         {
           "destination": "_css-variables.scss",
@@ -125,6 +125,20 @@
         "filter": {
           "attributes": {
             "category": "size"
+          }
+        }
+      }]
+    },
+    "assets/embed/scss": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "asset/base64"],
+      "buildPath": "build/scss/",
+      "files": [{
+        "destination": "_icons.scss",
+        "format": "scss/variables",
+        "filter": {
+          "attributes": {
+            "category": "asset",
+            "type": "icon"
           }
         }
       }]

@@ -5,12 +5,14 @@
   "main": "build.js",
   "dependencies": {},
   "devDependencies": {
+    "@svgr/cli": "^5.4.0",
     "sass": "^1.26.7",
     "style-dictionary": "^2.10.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build/ && node build.js",
+    "build:icons": "npx @svgr/cli --icon -d build/react/icons assets/icons",
     "serve": "cd demo && python -m SimpleHTTPServer"
   },
   "repository": {

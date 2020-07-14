@@ -1,0 +1,24 @@
+{
+    "asset": {
+        "icon": {
+            "add": {
+                "value": "assets/icons/add.svg"
+            },
+            "check": {
+                "value": "assets/icons/check.svg"
+            },
+            "close": {
+                "value": "assets/icons/close.svg"
+            },
+            "favorite": {
+                "value": "assets/icons/favorite.svg"
+            },
+            "search": {
+                "value": "assets/icons/search.svg"
+            },
+            "warning": {
+                "value": "assets/icons/warning.svg"
+            }
+        }
+    }
+}
