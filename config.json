@@ -6,12 +6,40 @@
       "buildPath": "build/scss/",
       "files": [
         {
-          "destination": "_sass-variables.scss",
-          "format": "scss/variables"
+          "destination": "_color-sass-variables.scss",
+          "format": "scss/variables",
+          "filter": {
+            "attributes": {
+              "category": "color"
+            }
+          }
         },
         {
-          "destination": "_css-variables.scss",
-          "format": "css/variables"
+          "destination": "_size-sass-variables.scss",
+          "format": "scss/variables",
+          "filter": {
+            "attributes": {
+              "category": "size"
+            }
+          }
+        },
+        {
+          "destination": "_color-css-variables.scss",
+          "format": "css/variables",
+          "filter": {
+            "attributes": {
+              "category": "color"
+            }
+          }
+        },
+        {
+          "destination": "_size-css-variables.scss",
+          "format": "css/variables",
+          "filter": {
+            "attributes": {
+              "category": "size"
+            }
+          }
         }
       ]
     },

@@ -1,19 +1,40 @@
 /**
  * Do not edit directly
- * Generated on Tue, 14 Jul 2020 21:35:27 GMT
+ * Generated on Thu, 17 Sep 2020 19:44:03 GMT
  */
 :root {
-  --asset-icon-add: "assets/icons/add.svg";
-  --asset-icon-check: "assets/icons/check.svg";
-  --asset-icon-close: "assets/icons/close.svg";
-  --asset-icon-favorite: "assets/icons/favorite.svg";
-  --asset-icon-search: "assets/icons/search.svg";
-  --asset-icon-warning: "assets/icons/warning.svg";
   --color-ink: #1a1a1a;
   --color-bg: #ffffff;
   --color-action: #2f80ed;
   --color-positive: #27ae60;
   --color-negative: #eb5757;
+  --color-theme-light-ink: #1a1a1a;
+  --color-theme-light-bg: #ffffff;
+  --color-theme-light-action: #2f80ed;
+  --color-theme-light-positive: #27ae60;
+  --color-theme-light-negative: #eb5757;
+  --color-theme-dark-ink: #ffffff;
+  --color-theme-dark-bg: #1a1a1a;
+  --color-theme-dark-action: #2f80ed;
+  --color-theme-dark-positive: #27ae60;
+  --color-theme-dark-negative: #eb5757;
+  --color-theme-medium-ink: #444343;
+  --color-theme-medium-bg: #f3f3f3;
+  --color-theme-medium-action: #6497db;
+  --color-theme-medium-positive: #54bd81;
+  --color-theme-medium-negative: #e47272;
+  --color-theme-amurica-ink: #ffffff;
+  --color-theme-amurica-bg: #be0a2f;
+  --color-theme-amurica-action: #002667;
+  --color-theme-amurica-positive: #469c96;
+  --color-theme-amurica-negative: #e0ce46;
+}
+
+/**
+ * Do not edit directly
+ * Generated on Thu, 17 Sep 2020 19:44:03 GMT
+ */
+:root {
   --size-font-title: 3rem;
   /* used for titles */
   --size-font-body: 1rem;

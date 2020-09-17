@@ -1,4 +1,5 @@
-@use 'build/scss/css-variables';
+@use 'build/scss/color-css-variables';
+@use 'build/scss/size-css-variables';
 
 @mixin mode($theme) {
     --color-ink: var(--color-theme-#{$theme}-ink);
