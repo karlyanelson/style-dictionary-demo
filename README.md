@@ -8,17 +8,18 @@ Will build style dictionary and compile sass files into css for demo site.
 
 Just open the `demo/index.html` file in the browser to view.
 
-
---- 
+---
 
 # Basic Style Dictionary
 
 This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run:
-```bash
+
+```
 style-dictionary build
 ```
 
 You should see something like this output:
+
 ```
 Copying starter files...
 
@@ -49,6 +50,7 @@ ios-swift-separate-enums
 ```
 
 Pat yourself on the back, you have now built your first style dictionary! Moving on, take a look at what we have built. This should have created a build directory and it should look like this:
+
 ```
 ├── README.md
 ├── config.json
@@ -78,6 +80,7 @@ Pat yourself on the back, you have now built your first style dictionary! Moving
 If you open `config.json` you will see there are 3 platforms defined: scss, android, ios. Each platform has a transformGroup, buildPath, and files. The buildPath and files of the platform should match up to the files what were built. The files built should look like these:
 
 **Android**
+
 ```xml
 <!-- font_dimens.xml -->
 <resources>
@@ -101,6 +104,7 @@ If you open `config.json` you will see there are 3 platforms defined: scss, andr
 ```
 
 **SCSS**
+
 ```scss
 // variables.scss
 $color-base-gray-light: #cccccc;
@@ -118,6 +122,7 @@ $size-font-base: 1rem;
 ```
 
 **iOS**
+
 ```objc
 #import "StyleDictionaryColor.h"
 
@@ -151,9 +156,10 @@ $size-font-base: 1rem;
 ```
 
 Pretty nifty! This shows a few things happening:
+
 1. The build system does a deep merge of all the property JSON files defined in the `source` attribute of `config.json`. This allows you to split up the property JSON files however you want. There are 2 JSON files with `color` as the top level key, but they get merged properly.
-1. The build system resolves references to other style properties. `{size.font.medium.value}` gets resolved properly.
-1. The build system handles references to property values in other files as well as you can see in `properties/color/font.json`.
+2. The build system resolves references to other style properties. `{size.font.medium.value}` gets resolved properly.
+3. The build system handles references to property values in other files as well as you can see in `properties/color/font.json`.
 
 Now let's make a change and see how that affects things. Open up `properties/color/base.json` and change `"#111111"` to `"#000000"`. After you make that change, save the file and re-run the build command `style-dictionary build`. Open up the build files and take a look.
 

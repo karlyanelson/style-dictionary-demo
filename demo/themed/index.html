@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Style Dictionary Demo</title>
-        <link rel="stylesheet" href="style-themed.css">
-    </head>
-    <body class="light">
-        <nav><a href="/">Basic Demo</a></nav>
-        <fieldset class="modes">
-            <input class="light-mode" type="radio" id="light" name="mode" value="light" checked>
-            <label for="light">Light Mode</label>
+  <head>
+    <title>Style Dictionary Demo</title>
+    <link rel="stylesheet" href="style-themed.css" />
+  </head>
+  <body class="light">
+    <nav><a href="/">Basic Demo</a></nav>
+    <fieldset class="modes">
+      <input
+        class="light-mode"
+        type="radio"
+        id="light"
+        name="mode"
+        value="light"
+        checked
+      />
+      <label for="light">Light Mode</label>
 
-            <input class="medium-mode" type="radio" id="medium" name="mode" value="medium">
-            <label for="medium">Medium Mode</label>
-            
-            <input class="dark-mode" type="radio" id="dark" name="mode" value="dark">
-            <label for="dark">Dark Mode</label>
+      <input
+        class="medium-mode"
+        type="radio"
+        id="medium"
+        name="mode"
+        value="medium"
+      />
+      <label for="medium">Medium Mode</label>
 
-            <input class="amurica-mode" type="radio" id="amurica" name="mode" value="amurica">
-            <label for="amurica">Amurica Mode</label>
-        </fieldset>
-          
-        <main>
-            <h1>Hello World</h1>
-            <p><a href="#">I'm a link</a></p>
-            <button>And I'm a button</button>
-            <p class="success">Success!</p>
-            <p class="error">Error!</p>
-            <p>
-                Ball tip andouille biltong buffalo pork belly, elit voluptate labore veniam ground round minim pariatur id ham sed. Minim in est ipsum nulla shoulder t-bone burgdoggen ut spare ribs sirloin turkey tail irure adipisicing. Beef ribs nulla proident enim kevin, sausage salami tail bresaola eu ea. Ex ut turkey incididunt shoulder tempor ut pig frankfurter ground round biltong culpa.Fatback officia dolor, shoulder andouille meatball enim adipisicing tail leberkas. Aliquip leberkas tail esse, consectetur in veniam rump incididunt exercitation. Veniam reprehenderit bacon frankfurter leberkas chuck fatback duis bresaola drumstick do. Elit filet mignon ham hock, pancetta shoulder ut turducken nostrud doner eu labore cillum drumstick. Enim ut est proident, quis ipsum eu strip steak mollit consequat rump. Mollit consequat prosciutto, porchetta ullamco nulla tongue bacon spare ribs. Corned beef magna aliquip, consectetur id voluptate salami sed ut.Boudin minim capicola, eiusmod magna corned beef pancetta buffalo cow eu nulla filet mignon kielbasa shank burgdoggen. Occaecat jerky ad chislic. Aute tongue jerky anim. Short ribs dolor corned beef pariatur doner lorem tempor beef ribs. Kielbasa pork chop occaecat, aliquip elit kevin ut magna tongue porchetta est ipsum bacon veniam.Labore tenderloin ground round, proident short loin irure ut short ribs ad shankle tail laborum bresaola reprehenderit in.
-            </p>
-        </main>
+      <input
+        class="dark-mode"
+        type="radio"
+        id="dark"
+        name="mode"
+        value="dark"
+      />
+      <label for="dark">Dark Mode</label>
 
-        <script>
-            const body = document.querySelector('body');
-            const modesInputs = document.querySelector('.modes');
-            const currentlySelected = document.querySelector('.modes input:checked');
+      <input
+        class="amurica-mode"
+        type="radio"
+        id="amurica"
+        name="mode"
+        value="amurica"
+      />
+      <label for="amurica">Amurica Mode</label>
+    </fieldset>
 
-            body.className = currentlySelected.value;
+    <main>
+      <h1>Hello World</h1>
+      <p><a href="#">I'm a link</a></p>
+      <button>And I'm a button</button>
+      <p class="success">Success!</p>
+      <p class="error">Error!</p>
+      <p>
+        Andouille biltong buffalo pork belly, elit voluptate labore veniam
+        ground round minim pariatur id ham sed. Minim in est ipsum nulla
+        shoulder t-bone burgdoggen ut spare ribs sirloin turkey tail irure
+        adipisicing. Beef ribs nulla proident enim kevin, sausage salami tail
+        bresaola eu ea. Ex ut turkey incididunt shoulder tempor ut pig
+        frankfurter ground round biltong culpa.Fatback officia dolor, shoulder
+        andouille meatball enim adipisicing tail leberkas. Aliquip leberkas tail
+        esse, consectetur in veniam rump incididunt exercitation. Veniam
+        reprehenderit bacon frankfurter leberkas chuck fatback duis bresaola
+        drumstick do. Elit filet mignon ham hock, pancetta shoulder ut turducken
+        nostrud doner eu labore cillum drumstick. Enim ut est proident, quis
+        ipsum eu strip steak mollit consequat rump. Mollit consequat prosciutto,
+        porchetta ullamco nulla tongue bacon spare ribs. Corned beef magna
+        aliquip, consectetur id voluptate salami sed ut.Boudin minim capicola,
+        eiusmod magna corned beef pancetta buffalo cow eu nulla filet mignon
+        kielbasa shank burgdoggen. Occaecat jerky ad chislic. Aute tongue jerky
+        anim. Short ribs dolor corned beef pariatur doner lorem tempor beef
+        ribs. Kielbasa pork chop occaecat, aliquip elit kevin ut magna tongue
+        porchetta est ipsum bacon veniam.Labore tenderloin ground round,
+        proident short loin irure ut short ribs ad shankle tail laborum bresaola
+        reprehenderit in.
+      </p>
+    </main>
 
-            modesInputs.addEventListener('change', function(event){
-                if (event.target.checked){
-                    const mode = event.target.value;
-                    body.className = mode;
-                }
-            });
+    <script>
+      const body = document.querySelector("body");
+      const modesInputs = document.querySelector(".modes");
+      const currentlySelected = document.querySelector(".modes input:checked");
 
-        </script>
-    </body>
+      body.className = currentlySelected.value;
+
+      modesInputs.addEventListener("change", function (event) {
+        if (event.target.checked) {
+          const mode = event.target.value;
+          body.className = mode;
+        }
+      });
+    </script>
+  </body>
 </html>
